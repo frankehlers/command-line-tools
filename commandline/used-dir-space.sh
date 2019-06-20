@@ -1,3 +1,3 @@
 #!/bin/bash
 
-find -type d -exec du -h -d 1 {} \;
+find -maxdepth 1 -type d -exec du -h -d 0 {} \;
