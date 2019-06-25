@@ -1,0 +1,11 @@
+# multiple units at once
+journalctl -u home.mount -u networking.service 
+
+# live watch
+journalctl -f -u apache 
+
+#filter by date
+journalctl --since "2016-07-01" --until "2 minutes ago" 
+
+# filter by label error, warning, alert or emergency
+journalctl -p err -b 
