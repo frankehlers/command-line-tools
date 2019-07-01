@@ -17,3 +17,6 @@ journalctl --since "2016-07-01" --until "2 minutes ago"
 
 # filter by label error, warning, alert or emergency
 journalctl -p err -b 
+
+# add environment variable to path
+export PATH=$PATH:~/opt/bin
