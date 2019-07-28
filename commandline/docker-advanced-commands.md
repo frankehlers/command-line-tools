@@ -16,3 +16,7 @@ add shared volume
     VBoxManage.exe sharedfolder add "default" --name "/d" --hostpath "\\?\d:\\" --automount
     docker-machine start
     docker run --rm -it -v //d:/host_d ubuntu bash
+
+list all containers with ip
+
+    docker ps -q | xargs -n 1 docker inspect --format '{{range .NetworkSettings.Networks}}{{.IPAddress}}{{end}} {{ .Name }}' | sed 's/ \// /'
