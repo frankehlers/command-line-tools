@@ -20,3 +20,7 @@ journalctl -p err -b
 
 # add environment variable to path
 export PATH=$PATH:~/opt/bin
+
+# show path to linux command
+which ls
+
