@@ -1,0 +1,11 @@
+# create solution 
+dotnet new sln
+
+# create library
+dotnet new classlib -o library 
+
+# add file to solution
+dotnet sln add library/library.csproj
+
+# add package from nuget repository
+dotnet add library package Newtonsoft.Json
