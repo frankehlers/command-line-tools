@@ -1,5 +1,6 @@
 rapsi-config
 - change password
+- update
 - set hostname
 - set locale / timezone / keyboard / wifi country
 
