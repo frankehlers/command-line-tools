@@ -16,5 +16,5 @@ set static ip (https://www.raspberrypi.org/documentation/configuration/tcpip/REA
     static routers=192.168.0.254
     static domain_name_servers=192.168.0.254 8.8.8.8
   
-enable ssh public key authentication  
+enable ssh public key authentication  // maybe first step?
 https://wiki.ubuntuusers.de/SSH/#Authentifizierung-ueber-Public-Keys
