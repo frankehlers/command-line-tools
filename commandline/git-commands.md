@@ -11,3 +11,7 @@
 
     git remote add origin https://github.com/username/my-project.git
     git push -u origin master
+
+
+# git config
+    git config --global --add color.ui true # enable colored output
