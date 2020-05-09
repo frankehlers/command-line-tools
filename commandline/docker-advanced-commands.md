@@ -27,3 +27,7 @@ add shared volume
 list all containers with ip
 
     docker ps -q | xargs -n 1 docker inspect --format '{{range .NetworkSettings.Networks}}{{.IPAddress}}{{end}} {{ .Name }}' | sed 's/ \// /'
+
+delete all containers with status 'exited'
+
+    docker rm $(docker ps -a -q -f status=exited)
