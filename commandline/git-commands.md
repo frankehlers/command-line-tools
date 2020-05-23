@@ -18,3 +18,5 @@
 
 #### delete fully merged branch
     git branch -d branchname
+
+    git commit --allow-empty -m "Trigger notification"
