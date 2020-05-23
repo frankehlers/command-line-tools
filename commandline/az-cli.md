@@ -24,3 +24,12 @@ az webapp
 
 `az webapp create --name tailspin-space-game-web-staging-$webappsuffix --resource-group tailspin-space-game-rg --plan tailspin-space-game-asp`
 
+`az webapp list`
+
+`az webapp list --resource-group tailspin-space-game-rg --query "[].{hostName: defaultHostName, state: state}" --output table`
+
+`az webapp config connection-string set --name tailspin-space-game-web-dev-$webappsuffix --resource-group tailspin-space-game-rg --settings "DefaultConnection=$DB_CONNECTION_STRING" --connection-string-type SQLAzure`
+
+`az webapp config connection-string set --name tailspin-space-game-web-test-$webappsuffix --resource-group tailspin-space-game-rg --settings "DefaultConnection=$DB_CONNECTION_STRING" --connection-string-type SQLAzure`
+
+`az webapp config connection-string set --name tailspin-space-game-web-staging-$webappsuffix --resource-group tailspin-space-game-rg --settings "DefaultConnection=$DB_CONNECTION_STRING" --connection-string-type SQLAzure`
