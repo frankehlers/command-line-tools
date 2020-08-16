@@ -20,7 +20,8 @@ list directory content of mounted volumes
 add shared volume
 
     docker-machine stop
-    VBoxManage.exe sharedfolder add "default" --name "/d" --hostpath "\\?\d:\\" --automount
+    ~~VBoxManage.exe sharedfolder add "default" --name "/d" --hostpath "\\?\d:\\" --automount~~
+    VBoxManage.exe sharedfolder add "default" --name "d" --hostpath "\\?\d:\" --automount
     docker-machine start
     docker run --rm -it -v //d:/host_d ubuntu bash
 
