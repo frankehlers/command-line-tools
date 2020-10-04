@@ -10,9 +10,13 @@ dotnet sln add library/library.csproj
 # add package from nuget repository
 dotnet add library package Newtonsoft.Json
 
-
 # If you see an error in your browser that's related to a privacy or certificate error
 dotnet dev-certs https --trust
 
 dotnet build --configuration Release
 dotnet run --configuration Release --no-build --project Tailspin.SpaceGame.Web
+
+
+## packages
+# add dotnet ef
+dotnet tool install --global dotnet-ef
