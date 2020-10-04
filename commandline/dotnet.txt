@@ -18,5 +18,5 @@ dotnet run --configuration Release --no-build --project Tailspin.SpaceGame.Web
 
 
 ## packages
-# add dotnet ef
-dotnet tool install --global dotnet-ef
+# add dotnet ef (preview)
+dotnet tool install --global dotnet-ef --version 5.0.0-rc.1.20451.13
