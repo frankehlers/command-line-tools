@@ -20,3 +20,11 @@
     git branch -d branchname
 
     git commit --allow-empty -m "Trigger notification"
+
+
+# undo last commit but keep changes
+git reset --soft HEAD~1
+
+# undo last commit without keeping changes
+git reset --soft HEAD~1
+
