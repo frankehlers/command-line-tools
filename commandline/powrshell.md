@@ -1,0 +1,2 @@
+# Show installed version
+$PSVersionTable
