@@ -52,3 +52,9 @@ $ mongo
 
 ## delete users
 > db.dropUser("my-user")
+
+# some commands
+use myNewDatabase
+db.myCollection.insertOne( { x: 1 } );
+db.myCollection.find().pretty()
+quit() # or <ctrl-d>
