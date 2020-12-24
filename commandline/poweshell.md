@@ -1,3 +1,3 @@
-Show installed version
+Show powershell version
 
-  $PSVersionTable
+    $PSVersionTable
