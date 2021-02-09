@@ -32,3 +32,10 @@ list all containers with ip
 delete all containers with status 'exited'
 
     docker rm $(docker ps -a -q -f status=exited)
+
+Mount windows directory in linux container (Docker for Windows)
+
+    docker run --rm -v /mnt/c/Users/xeno:/data alpine ls /data
+    docker run --rm -v C:\Users:/data alpine ls /data
+    
+   
