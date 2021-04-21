@@ -38,4 +38,13 @@ Mount windows directory in linux container (Docker for Windows)
     docker run --rm -v /mnt/c/Users/xeno:/data alpine ls /data
     docker run --rm -v C:\Users:/data alpine ls /data
     
+Run interactive ubuntu container 
+
+    docker run -it -d --name ubuntu ubuntu bash
+    
+Enter running ubuntu container
+
+    docker exec -it ubuntu bash
+    
+
    
