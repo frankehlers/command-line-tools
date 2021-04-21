@@ -40,11 +40,11 @@ Mount windows directory in linux container (Docker for Windows)
     
 Run interactive ubuntu container 
 
-    docker run -it -d --name ubuntu ubuntu bash
+    docker run -it -d --name myUbuntu ubuntu bash
     
 Enter running ubuntu container
 
-    docker exec -it ubuntu bash
+    docker exec -it myUbuntu bash
     
 
    
