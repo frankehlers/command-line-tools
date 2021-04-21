@@ -1,4 +1,5 @@
 Create docker machine from alternative boot2docker image
+
 (different images can be found here: https://github.com/boot2docker/boot2docker/releases)
     
     docker-machine create --driver "virtualbox" --virtualbox-boot2docker-url https://github.com/boot2docker/boot2docker/releases/download/v18.09.8/boot2docker.iso default
