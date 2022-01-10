@@ -24,3 +24,6 @@ export PATH=$PATH:~/opt/bin
 # show path to linux command
 which ls
 
+# Create files of a certain size
+truncate -s 5M ostechnix.txt
+
